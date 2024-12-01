@@ -1,0 +1,47 @@
+@use "../utils/variables" as var;
+@use "../base/typography" as font;
+@use "../utils/mixins" as mix;
+@use "../layout/flex" as flx;
+footer {
+  padding-bottom: 144px;
+  .dark & {
+    background-color: var.$text-color;
+  }
+  .footer_logo {
+    padding-top: 100px;
+  }
+  .foter_p_texts {
+    margin-top: 40px;
+    color: var.$bg-grey;
+    @include mix.width(300, 84);
+    @include font.font(16, 400, 28);
+    .dark & {
+      color: var.$bg-white;
+    }
+  }
+  .footer_texts_link {
+    padding-top: 64px;
+    a {
+      color: var.$bg-grey;
+      .dark & {
+        color: var.$bg-white;
+      }
+    }
+  }
+  .footer_logo_menus {
+    @include flx.flex(space-between, center, 0);
+    flex-wrap: wrap;
+  }
+  .footer_menu {
+    margin-top: 40px;
+    ul {
+      padding-top: 30px;
+      a {
+        color: var.$bg-grey;
+        .dark & {
+          color: var.$bg-white;
+        }
+      }
+    }
+  }
+}

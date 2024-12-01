@@ -1,0 +1,297 @@
+@use "../components/buttons" as btns;
+@use "../base/typography" as font;
+@use "../utils/variables" as var;
+@use "../layout/flex" as flx;
+@use "../utils/mixins" as mix;
+.make_great {
+  padding: 57px 0 166px 0;
+  background-color: var.$bg-ink;
+  .dark & {
+    background-color: var.$text-color;
+  }
+  h5 {
+    padding-top: 60px;
+    margin: 0 auto;
+    @include mix.width(57, 32);
+    @include font.font(20, 400, 32);
+    color: var.$bg-grey;
+    .dark & {
+      color: var.$bg-white;
+    }
+  }
+  h1 {
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+    @include mix.width(842, 168);
+    @include font.font(64, 400, 84);
+    color: var.$bg-white;
+    @media (max-width: 758px) {
+      @include font.font(54, 400, 74);
+    }
+    @media (max-width: 650px) {
+      @include font.font(44, 400, 64);
+    }
+    @media (max-width: 517px) {
+      @include font.font(34, 400, 54);
+    }
+    .dark & {
+      color: var.$bg-white;
+    }
+  }
+  p {
+    padding-top: 32px;
+    text-align: center;
+    margin: 0 auto;
+    @include mix.width(745, 64);
+    @include font.font(16, 400, 28);
+    color: var.$bg-grey;
+    .dark & {
+      color: var.$bg-white;
+    }
+  }
+}
+.handshake_market {
+  .dark & {
+    background-color: var.$text-color;
+  }
+  .hanshake_texts {
+    padding: 124px 0 430px 0;
+    @include mix.width(800, 384);
+    margin: 0 auto;
+    h5 {
+      @include mix.width(89, 32);
+      @include font.font(20, 400, 32);
+      color: var.$bg-grey;
+      .dark & {
+        color: var.$bg-white;
+      }
+    }
+    h2 {
+      @include mix.width(842, 144);
+      @include font.font(48, 400, 72);
+      color: var.$text-color;
+      @media (max-width: 694px) {
+        @include font.font(35, 400, 60);
+      }
+      @media (max-width: 509px) {
+        @include font.font(25, 400, 50);
+      }
+      .dark & {
+        color: var.$bg-white;
+      }
+    }
+    p {
+      @include mix.width(799, 168);
+      @include font.font(20, 400, 32);
+      color: var.$bg-grey;
+      @media (max-width: 694px) {
+        @include font.font(15, 400, 22);
+      }
+      .dark & {
+        color: var.$bg-white;
+      }
+    }
+  }
+  .handshake_imgages {
+    @include flx.flex(space-between, center, 10);
+    .handshake_imgage {
+      padding-top: 100px;
+      flex-wrap: wrap;
+      .handshake_img {
+        padding: 0 0 40px 0;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .handshake_img {
+      padding-top: 60px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+.handshake_infographic {
+  padding: 0 0 96px 0;
+  background-color: var.$bg-ink;
+  p {
+    padding: 94px 0 0 0;
+    margin: 0 auto;
+    @include mix.width(126, 32);
+    @include font.font(20, 400, 32);
+    color: var.$bg-grey;
+  }
+  h2 {
+    padding: 40px;
+    margin: 0 auto;
+    text-align: center;
+    @include mix.width(842, 144);
+    @include font.font(48, 400, 72);
+    color: var.$bg-white;
+    @media (max-width: 731px) {
+      @include font.font(36, 400, 56);
+    }
+    @media (max-width: 494px) {
+      @include font.font(20, 400, 46);
+    }
+  }
+  .handshake_number {
+    padding: 104px 20px 0 20px;
+    @include flx.flex(space-between, center, 80);
+    @media (max-width: 856px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    h3 {
+      @include mix.width(233, 56);
+      @include font.font(96, 400, 56);
+      color: var.$bg-green;
+      @media (max-width: 958px) {
+        @include font.font(66, 400, 26);
+        @include flx.flex(space-between, center, 10);
+      }
+    }
+    h4 {
+      padding: 32px 0 0 20px;
+      @include font.font(24, 400, 36);
+      color: var.$bg-white;
+    }
+  }
+}
+.leadership_team {
+  .dark & {
+    background-color: var.$text-color;
+  }
+  .leadership_team_texts {
+    padding: 196px 0 0 52px 0;
+    margin: 0 auto;
+    @include mix.width(800, 251);
+    h5 {
+      padding-top: 96px;
+      @include mix.width(90, 32);
+      @include font.font(20, 400, 32);
+      color: var.$bg-grey;
+      .dark & {
+        color: var.$bg-white;
+      }
+    }
+    h2 {
+      padding-top: 80px;
+      @include mix.width(842, 72);
+      @include font.font(48, 400, 22);
+      color: var.$text-color;
+      .dark & {
+        color: var.$bg-white;
+      }
+      @media (max-width: 527px) {
+        @include font.font(38, 400, 32);
+      }
+    }
+    p {
+      padding-top: 60px;
+      @include mix.width(799, 110);
+      @include font.font(20, 400, 32);
+      color: var.$bg-grey;
+      .dark & {
+        color: var.$bg-white;
+      }
+      @media (max-width: 527px) {
+        @include font.font(13, 400, 32);
+      }
+    }
+  }
+
+  .leadership_ship_cards {
+    padding: 150px 0 120px 0;
+    @include flx.flex(space-between, center, 20);
+    @media (max-width: 996px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .leadership_ship_card {
+      h3 {
+        padding-top: 24px;
+        @include font.font(28, 400, 48);
+        .dark & {
+          color: var.$bg-white;
+        }
+      }
+      p {
+        padding-top: 12px;
+        @include font.font(20, 400, 32);
+        .dark & {
+          color: var.$bg-white;
+        }
+      }
+    }
+  }
+}
+.things_commited {
+  padding-bottom: 120px;
+  background-color: var.$bg-ink;
+  .things_commited_texts {
+    @include mix.width(800, 300);
+    margin: 0 auto;
+    h5 {
+      padding: 122px 0 0 0;
+      @include mix.width(101, 32);
+      @include font.font(20, 400, 32);
+      color: var.$bg-white;
+    }
+    h2 {
+      padding: 40px 0 0 0;
+      @include mix.width(842, 72);
+      @include font.font(48, 400, 72);
+      color: var.$bg-white;
+      @media (max-width: 676px) {
+        @include font.font(38, 400, 42);
+      }
+    }
+    p {
+      padding: 50px 0 0 0;
+      @include mix.width(799, 110);
+      @include font.font(20, 400, 32);
+      color: var.$bg-white;
+      @media (max-width: 676px) {
+        @include font.font(13, 400, 28);
+      }
+    }
+  }
+
+  .things_commited_card {
+    @media (max-width: 407px) {
+      flex-direction: column;
+    }
+    @media (max-width: 547px) {
+      margin-top: 90px;
+    }
+    margin: 72px 0 0 0;
+    @include flx.flex(center, center, 20);
+
+    h4 {
+      @include mix.width(842, 39);
+      @include font.font(28, 400, 48);
+      color: var.$bg-white;
+      @media (max-width: 676px) {
+        @include font.font(15, 400, 23);
+      }
+    }
+    p {
+      @include mix.width(603, 71);
+      @include font.font(20, 400, 32);
+      color: var.$bg-white;
+      @media (max-width: 676px) {
+        @include font.font(15, 400, 28);
+      }
+      @media (max-width: 547px) {
+        @include font.font(10, 400, 23);
+      }
+    }
+  }
+}
+.input_company {
+  padding-top: 124px;
+}

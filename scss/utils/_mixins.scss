@@ -1,0 +1,4 @@
+@mixin width($width, $height) {
+  max-width: $width + px;
+  height: $height + px;
+}
